@@ -8,7 +8,7 @@ START_ID = 2399797019 # Paste it here
 END_ID = 0 # Id to stop at if you've run this script before, leave 0 otherwise
 
 # Then, press F12, click on "Network", press F5, scroll to the very first element, it will have your <START_ID> as name. Click on it and copy the whole value of "Cookie" in Headers > Request Headers
-RAW_DATA = 'SESSION=944e7356-2189-43 ...' # Paste it inside the ''
+RAW_DATA = 'SESSION=63497e03-bcbc-4...'
 
 cookie = SimpleCookie()
 cookie.load(RAW_DATA)
