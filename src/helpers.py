@@ -7,7 +7,7 @@ def get_mps(row):
         return 0
     seconds = int(hmmss_per_k[6]) + 10*int(hmmss_per_k[5]) + 60*int(hmmss_per_k[3]) + 600*int(hmmss_per_k[2]) + 3600*int(hmmss_per_k[0])
     mps = 1000/seconds
-    return mps
+    return min(mps, get_best_mps(row))
 
 def get_best_mps(row):
     hmmss_per_k = row["Meilleure allure"]
